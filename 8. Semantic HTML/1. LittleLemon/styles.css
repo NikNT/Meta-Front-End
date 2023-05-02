@@ -25,3 +25,35 @@ h2,
 p {
   text-align: center;
 }
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 4px;
+}
+
+label {
+  font-size: 2vh;
+}
+
+input {
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
