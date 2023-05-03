@@ -57,3 +57,13 @@ div {
   flex-direction: column;
   text-align: center;
 }
+
+input:focus:invalid {
+  border: 2px solid red;
+}
+
+fieldset {
+  margin-bottom: 2vh;
+  border: 2px solid black;
+  border-radius: 4px;
+}
