@@ -67,3 +67,9 @@ fieldset {
   border: 2px solid black;
   border-radius: 4px;
 }
+
+.iFrame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
