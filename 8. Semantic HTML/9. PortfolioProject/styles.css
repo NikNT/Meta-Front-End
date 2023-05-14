@@ -1,0 +1,74 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Normalization */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 25vw;
+  height: 25vh;
+  margin-top: 2vh;
+}
+
+/* Navigation Bar */
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  margin-top: 2vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+.info {
+  display: flex;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  width: 100vw;
+  margin-top: 2vh;
+}
+
+footer > img {
+  width: 50%;
+}
+
+footer p {
+  width: 50%;
+  text-align: center;
+  background: yellow;
+}
