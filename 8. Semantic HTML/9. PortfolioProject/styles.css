@@ -5,6 +5,12 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+body {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  height: 100vh;
+}
+
 /* Normalization */
 * {
   margin: 0;
@@ -18,6 +24,10 @@ html {
 
 /* Header */
 
+header {
+  margin-bottom: 5vh;
+}
+
 .header-logo {
   display: flex;
   justify-content: center;
@@ -30,6 +40,7 @@ html {
 }
 
 /* Navigation Bar */
+
 ul {
   display: flex;
   align-items: center;
@@ -41,6 +52,14 @@ ul {
 a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+a:hover {
+  color: #d0604c;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid black;
 }
 
 /* Main */
@@ -49,26 +68,66 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4vh;
+}
+
+.promo {
+  height: 25vh;
+  text-align: justify;
+  font-size: 2.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
 }
 
 .info {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 25vh;
+}
+
+.info-div > img {
+  height: 8vh;
+  width: 8vh;
+  cursor: pointer;
+  align-items: center;
+}
+
+#appointment {
+  margin-left: 25px;
+}
+
+.info-div p {
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2vh;
+}
+
+.info-div p:hover {
+  color: #d0604c;
+  transition: 0.2s all ease-in-out;
 }
 
 /* Footer */
 footer {
   display: flex;
+  align-items: center;
   width: 100vw;
   margin-top: 2vh;
 }
 
 footer > img {
   width: 50%;
+  height: 30%;
 }
 
 footer p {
   width: 50%;
   text-align: center;
-  background: yellow;
+  font-weight: bold;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
 }
