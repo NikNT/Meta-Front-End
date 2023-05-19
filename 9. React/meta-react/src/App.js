@@ -1,10 +1,22 @@
+import { useState } from "react";
 import "./App.css";
-import { GuessNumber } from "./components/GuessNumber";
+// import FormUseState from "./components/FormUseState";
+// import { GuessNumber } from "./components/GuessNumber";
+import Heading from "./components/Heading";
 
 function App() {
+  const [word, setWord] = useState("Hey There!");
+
+  const clickHandler = () => {
+    setWord("Okay, Bye!");
+  };
+
   return (
     <div className="App">
-      <GuessNumber />
+      {/* <GuessNumber /> */}
+      {/* <FormUseState /> */}
+      <Heading message={word} />
+      <button onClick={clickHandler}>Bye</button>
     </div>
   );
 }
