@@ -1,6 +1,8 @@
 import { Lists } from "./components/Lists";
 import "./App.css";
 import { DessertsList } from "./components/DessertsList";
+import ControlledForm from "./components/ControlledForm";
+import { FeedbackForm } from "./components/FeedbackForm";
 
 const desserts = [
   {
@@ -29,7 +31,9 @@ function App() {
   return (
     <div className="App">
       {/* <Lists /> */}
-      <DessertsList data={desserts} />
+      {/* <DessertsList data={desserts} /> */}
+      <ControlledForm />
+      <FeedbackForm />
     </div>
   );
 }
