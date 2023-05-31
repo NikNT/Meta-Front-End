@@ -1,11 +1,12 @@
 // import { Lists } from "./components/Lists";
 import "./App.css";
+import Form from "./components/Form";
 // import Counter from "./components/Counter";
 // import FetchNew from "./components/FetchNew";
 // import FetchUser from "./components/FetchUser";
 // import AllGoals from "./components/AllGoals";
 // import FetchingData from "./components/FetchingData";
-import Mouse from "./components/Mouse";
+// import Mouse from "./components/Mouse";
 // import Reducer from "./components/Reducer";
 // import Ref from "./components/Ref";
 // import Test from "./components/Test";
@@ -38,8 +39,12 @@ import Mouse from "./components/Mouse";
 // ];
 
 function App() {
+  const handleSubmit = () => {
+    console.log("Form Submitted!");
+  };
   return (
     <div className="App">
+      <Form onSubmit={handleSubmit} />
       {/* <Lists /> */}
       {/* <DessertsList data={desserts} /> */}
       {/* <ControlledForm />
@@ -53,7 +58,7 @@ function App() {
       {/* <Ref /> */}
       {/* <Counter /> */}
       {/* <Test /> */}
-      <Mouse />
+      {/* <Mouse /> */}
     </div>
   );
 }
