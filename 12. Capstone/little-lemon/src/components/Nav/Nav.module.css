@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap");
+
+* {
+  font-family: "Markazi Text", serif;
+}
+
+nav {
+  margin: 0 auto;
+  height: 100px;
+  width: 75%;
+  /* background: red; */
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li {
+  font-weight: bold;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a:visited {
+  color: black;
+}
+
+.logo {
+  /* margin-right: 50px; */
+  height: 100px;
+  width: 100px;
+  /* border: 2px solid black; */
+}
