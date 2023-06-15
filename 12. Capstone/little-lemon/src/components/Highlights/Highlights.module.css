@@ -13,3 +13,14 @@
   width: 75%;
   margin: 0 auto;
 }
+
+.cardSection {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flexItem {
+  flex: 0 0 33.33%;
+}
