@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap");
 
 * {
   font-family: "Markazi Text", serif;
@@ -8,7 +8,6 @@ nav {
   margin: 0 auto;
   height: 100px;
   width: 75%;
-  /* background: red; */
 }
 
 ul {
@@ -31,8 +30,21 @@ ul li a:visited {
 }
 
 .logo {
-  /* margin-right: 50px; */
   height: 100px;
   width: 100px;
-  /* border: 2px solid black; */
+} */
+
+nav {
+  /* background: #add8e6; */
+  font-weight: bold;
+  font-size: 20px;
+  grid-area: nav;
+  /* border: 1px solid blue; */
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

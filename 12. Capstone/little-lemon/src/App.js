@@ -1,14 +1,22 @@
-import "./App.css";
-import Hero from "./components/Hero/Hero";
-import Highlights from "./components/Highlights/Highlights";
+import styles from "./App.module.css";
 import Nav from "./components/Nav/Nav";
+import CallToAction from "./components/CallToAction/CallToAction";
+import Specials from "./components/Specials/Specials";
+import Testimonials from "./components/Testimonials/Testimonials";
+import Chicago from "./components/Chicago/Chicago";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Hero />
-      <Highlights />
+      <div className={styles.container}>
+        <Nav />
+        <CallToAction />
+        <Specials />
+        {/* <Testimonials />
+        <Chicago />
+        <Footer /> */}
+      </div>
     </>
   );
 }

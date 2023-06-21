@@ -1,0 +1,35 @@
+.specials {
+  /* background: #afdceb; */
+  grid-area: specials;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
+  /* flex-direction: column; */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  margin-top: 2vh;
+}
+
+.specialHeading {
+  font-size: 4vh;
+  font-weight: bold;
+  margin-left: 2vh;
+}
+
+.btn {
+  padding: 5px 30px;
+  margin-left: 2vh;
+  background-color: #f4ce14;
+  font-size: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
