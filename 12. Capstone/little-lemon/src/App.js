@@ -13,8 +13,8 @@ function App() {
         <Nav />
         <CallToAction />
         <Specials />
-        {/* <Testimonials />
-        <Chicago />
+        <Testimonials />
+        {/* <Chicago />
         <Footer /> */}
       </div>
     </>

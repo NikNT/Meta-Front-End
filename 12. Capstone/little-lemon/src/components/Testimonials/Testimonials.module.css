@@ -1,3 +1,49 @@
-.test {
-  background: #86c5d8;
+.container {
+  /* background: #86c5d8; */
+  width: 100%;
+  grid-area: test;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.testimonialsHeading {
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+.testCardsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background: red; */
+}
+
+.testCard {
+  height: 40vh;
+  width: 20%;
+  background: #edefee;
+  margin: 10px;
+  border-radius: 10px;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImage {
+  height: 8vh;
+}
+
+.cardCustomerName {
+  font-weight: bold;
+  font-size: 4vh;
+}
+
+.cardCustomerComment {
+  /* font-weight: bold; */
+  font-size: 3vh;
 }
