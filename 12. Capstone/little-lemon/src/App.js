@@ -14,8 +14,8 @@ function App() {
         <CallToAction />
         <Specials />
         <Testimonials />
-        {/* <Chicago />
-        <Footer /> */}
+        <Chicago />
+        {/* <Footer /> */}
       </div>
     </>
   );

@@ -1,0 +1,54 @@
+.container {
+  background-color: #f4ce14;
+  grid-area: chicago;
+  width: 100%;
+  height: 40vh;
+}
+
+.content {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.chicagoImgContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.chicagoImg {
+  height: 80%;
+  border-radius: 8px;
+  align-self: flex-end;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.city {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.desc {
+  font-size: 1.9vh;
+  width: 50%;
+  line-height: 1.2;
+  text-align: justify;
+}
