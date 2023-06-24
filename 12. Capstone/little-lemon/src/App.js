@@ -1,21 +1,16 @@
 import styles from "./App.module.css";
-import Nav from "./components/Nav/Nav";
-import CallToAction from "./components/CallToAction/CallToAction";
-import Specials from "./components/Specials/Specials";
-import Testimonials from "./components/Testimonials/Testimonials";
-import Chicago from "./components/Chicago/Chicago";
-import Footer from "./components/Footer/Footer";
+import { Routes, Route } from "react-router-dom";
+import Booking from "./components/Booking/Booking";
+import Homepage from "./components/Homepage";
 
 function App() {
   return (
     <>
       <div className={styles.container}>
-        <Nav />
-        <CallToAction />
-        <Specials />
-        <Testimonials />
-        <Chicago />
-        {/* <Footer /> */}
+        <Routes>
+          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/booking" element={<Booking />}></Route>
+        </Routes>
       </div>
     </>
   );

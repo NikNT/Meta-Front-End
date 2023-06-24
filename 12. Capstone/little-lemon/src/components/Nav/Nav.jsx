@@ -1,6 +1,7 @@
 import React from "react";
 import littleLemonLogo from "./Logo.svg";
 import styles from "./Nav.module.css";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   // return (
@@ -50,7 +51,9 @@ const Nav = () => {
         <li>Home</li>
         <li>About</li>
         <li>Menu</li>
-        <li>Reservations</li>
+        <li>
+          <Link to="/booking">Reservations</Link>
+        </li>
         <li>Order</li>
         <li>Login</li>
       </ul>
