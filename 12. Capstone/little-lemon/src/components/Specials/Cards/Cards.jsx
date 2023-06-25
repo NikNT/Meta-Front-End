@@ -35,7 +35,7 @@ const Cards = () => {
     <div className={styles.cardWrapper}>
       <div className={styles.card}>
         <div className={styles.cardImage}>
-          <img src={salad.image} alt="Food Image" />
+          <img src={salad.image} alt="Food" />
         </div>
         <div className={styles.cardTitle}>
           <p>{salad.title}</p>

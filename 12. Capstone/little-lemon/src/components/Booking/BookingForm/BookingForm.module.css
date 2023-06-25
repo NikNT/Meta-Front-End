@@ -1,0 +1,40 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #edefee;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 8px;
+  margin-top: 5vh;
+}
+
+label {
+  font-weight: bold;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+}
+
+input {
+  margin-bottom: 1vh;
+  padding: 8px 15px;
+  border-radius: 2px;
+  border: none;
+  width: 150px;
+}
+
+select {
+  margin-bottom: 1vh;
+  width: 150px;
+  padding: 8px 15px;
+  border: none;
+}
+
+.submitInput {
+  /* font-weight: bold; */
+  background: #f4ce14;
+  /* color: #edefee; */
+  border-radius: 4px;
+  cursor: pointer;
+}
