@@ -3,6 +3,7 @@ import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import BookingForm from "./BookingForm/BookingForm";
 import styles from "./Booking.module.css";
+import Main from "../Main/Main";
 
 const Booking = () => {
   return (
@@ -10,7 +11,7 @@ const Booking = () => {
       <Nav />
       <div className={styles.formContainer}>
         <h1 className={styles.reserveHeading}>Reserve a Table</h1>
-        <BookingForm />
+        <Main />
       </div>
       <Footer />
     </>

@@ -5,7 +5,6 @@ form {
   justify-content: center;
   background: #edefee;
   width: 25vw;
-  height: 25vw;
   border-radius: 8px;
   margin-top: 5vh;
 }
@@ -37,4 +36,8 @@ select {
   /* color: #edefee; */
   border-radius: 4px;
   cursor: pointer;
+}
+
+h2 {
+  font-size: 100px;
 }

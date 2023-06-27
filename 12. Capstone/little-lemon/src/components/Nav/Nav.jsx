@@ -48,11 +48,17 @@ const Nav = () => {
             alt="Little Lemon Logo"
           />
         </li>
-        <li>Home</li>
+        <li>
+          <Link className={styles.linkStyle} to="/">
+            Home
+          </Link>
+        </li>
         <li>About</li>
         <li>Menu</li>
         <li>
-          <Link to="/booking">Reservations</Link>
+          <Link className={styles.linkStyle} to="/booking">
+            Reservations
+          </Link>
         </li>
         <li>Order</li>
         <li>Login</li>

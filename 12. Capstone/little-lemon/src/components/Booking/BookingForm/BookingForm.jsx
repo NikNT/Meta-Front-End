@@ -1,41 +1,31 @@
 import React, { useState } from "react";
 import styles from "./BookingForm.module.css";
 
-const BookingForm = () => {
-  const [date, setDate] = useState("");
+const BookingForm = ({ availableTimes, handleDateChange }) => {
   const [time, setTime] = useState("17:00");
   const [guests, setGuests] = useState("1");
-  const [ocassion, setOcassion] = useState("Birthday");
+  const [occasion, setOccasion] = useState("Birthday");
+  const [selectedDate, setSelectedDate] = useState(""); // Define selectedDate state
 
-  const [availableTimes, setAvailableTimes] = useState([
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
-  ]);
-
-  const handleDateChange = (e) => {
-    setDate(e.target.value);
-  };
   const handleTimeChange = (e) => {
     setTime(e.target.value);
   };
+
   const handleGuestChange = (e) => {
     setGuests(e.target.value);
   };
 
-  const handleOcassionChange = (e) => {
-    setOcassion(e.target.value);
+  const handleOccasionChange = (e) => {
+    setOccasion(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(
-      `Date: ${date} | Time : ${time} | Guests : ${guests} | Ocassion: ${ocassion}`
+      `Date: ${selectedDate} | Time : ${time} | Guests : ${guests} | Occasion: ${occasion}`
     );
   };
+
   return (
     <div>
       <form>
@@ -44,8 +34,8 @@ const BookingForm = () => {
           type="date"
           name="res-date"
           id="res-date"
-          value={date}
-          onChange={handleDateChange}
+          value={selectedDate}
+          onChange={(e) => setSelectedDate(e.target.value)}
         />
         <label htmlFor="res-time">Choose Time</label>
         <select
@@ -69,12 +59,12 @@ const BookingForm = () => {
           value={guests}
           onChange={handleGuestChange}
         />
-        <label htmlFor="ocassion">Occasion</label>
+        <label htmlFor="occasion">Occasion</label>
         <select
-          name="ocassion"
-          id="ocassion"
-          value={ocassion}
-          onChange={handleOcassionChange}
+          name="occasion"
+          id="occasion"
+          value={occasion}
+          onChange={handleOccasionChange}
         >
           <option>Birthday</option>
           <option>Anniversary</option>

@@ -48,3 +48,11 @@ ul {
   justify-content: space-around;
   align-items: center;
 }
+
+.linkStyle {
+  text-decoration: none;
+}
+
+.linkStyle:visited {
+  color: black;
+}
